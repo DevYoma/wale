@@ -1,0 +1,22 @@
+.feedHome{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.feedHome__refreshIcon{
+    height: 40px;
+    width: 40px;
+    color: #00ADED;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.feedHome__refreshIcon:hover{
+    transform: rotate(180deg);
+    transition: 0.4s ease-out;
+}

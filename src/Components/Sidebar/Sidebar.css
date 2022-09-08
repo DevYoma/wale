@@ -1,0 +1,10 @@
+.sidebar{
+    /* border: 2px solid red; */
+    border-right: 1px solid lightgray;
+    flex: 0.2;
+}
+
+.sidebar__header{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

@@ -5,5 +5,10 @@
 }
 
 .app{
-
+  display: flex;
+  max-width: 1400px;
+  /* border: 1px solid red; */
+  margin-inline: auto;
+  overflow-y: hidden;
+  height: 100vh;
 }
