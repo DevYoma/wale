@@ -1,7 +1,8 @@
 import React from 'react'
-import './Sidebar.css';
+import './Sidebar.css'
+import TwitterLogo from '../../assets/twitter.png';
 import {
-    HomeIcon,
+    HomeIcon, 
     HashtagIcon,
     BellIcon,
     MailIcon,
@@ -11,13 +12,12 @@ import {
     DotsCircleHorizontalIcon
 } from '@heroicons/react/outline'
 import SidebarRow from '../SidebarRow/SidebarRow';
-import TwitterLogo from '../../assets/twitter.png'
 
 const Sidebar = () => {
   return (
-    <div className='sidebar'>
+    <div className="sidebar">
         <div className="sidebar__header">
-          <img src={TwitterLogo} alt="twitterLogo" style={{ height: "40px", width: "40px", objectFit: "contain"}}/>
+            <img src={TwitterLogo} alt="twitterlogo" />
         </div>
 
         <SidebarRow title="Home" Icon={HomeIcon}/>
@@ -26,7 +26,7 @@ const Sidebar = () => {
         <SidebarRow title="Messages" Icon={MailIcon}/>
         <SidebarRow title="Bookmarks" Icon={BookmarkIcon}/>
         <SidebarRow title="Lists" Icon={CollectionIcon}/>
-        <SidebarRow title="Signout" Icon={UserIcon}/>
+        <SidebarRow title="SignOut" Icon={UserIcon}/>
         <SidebarRow title="More" Icon={DotsCircleHorizontalIcon}/>
     </div>
   )
