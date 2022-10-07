@@ -1,6 +1,8 @@
 .feed{
-    /* border: 3px solid purple; */
+    padding-top: 10px;
     flex: 0.6;
+    /* border: 1px solid lightgray; */
+    border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
     overflow-y: scroll;
 }

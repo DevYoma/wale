@@ -1,18 +1,20 @@
 import React from 'react'
 import './Tweet.css';
-import {ChatAlt2Icon,
+import {
+    ChatAlt2Icon, 
     HeartIcon,
     SwitchHorizontalIcon,
-    UploadIcon,
+    UploadIcon
 } from '@heroicons/react/outline'
-import Yoma from '../../assets/yoma.jpg';
-import Kakashi from '../../assets/naruto.jfif'
+import Naruto from '../../assets/naruto.jfif'
+import Yoma from '../../assets/yoma.jpg'
 
-const Tweet = () => {
+const Tweet = (props) => {
+    console.log(props)
   return (
     <div className="tweet">
-        <div className="tweetHeader">
-            <img src={Yoma} alt="yomaImg" />
+        <div className="tweet__header">
+            <img src={Yoma} alt="userImg" />
 
             <div className="tweetHeader__details">
                 <span>devyoma</span>
@@ -25,12 +27,12 @@ const Tweet = () => {
         </div>
 
         <div className="tweetPicture">
-            <img src={Kakashi} alt="kakashi" />
+            <img src={props.image} alt="naruto" />
         </div>
 
         <div className="tweetFooter">
             <div>
-                <ChatAlt2Icon /><span>5</span>
+                <ChatAlt2Icon />
             </div>
             <div>
                 <HeartIcon />

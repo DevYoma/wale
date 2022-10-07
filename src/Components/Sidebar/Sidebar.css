@@ -1,10 +1,11 @@
 .sidebar{
-    /* border: 2px solid red; */
-    border-right: 1px solid lightgray;
+    padding-top: 10px;
     flex: 0.2;
+    /* border: 1px solid red; */
 }
 
-.sidebar__header{
-    margin-bottom: 20px;
-    margin-top: 10px;
+.sidebar__header > img{
+    height: 25px;
+    width: 25px;
 }
+
